@@ -2,9 +2,9 @@
 var startButton = document.getElementById("StButton");
 var moreInfoButton = document.getElementById("MIButton");
 
-//introduce sound effects
-var clickSound = new Audio('clickSound.m4a');
-var bgSound = new Audio('bgMusic.mp3');
+//preload the sounds
+clickSound.preload = 'auto';
+bgSound.preload = 'auto';
 bgSound.play();
 
 //add actionListeners to the buttons
