@@ -6,16 +6,28 @@ var moreInfoButton = document.getElementById("MIButton");
 var clickSound = new Audio('clickSound.m4a');
 var bgSound = new Audio('bgMusic.m4a');
 
-//add actionListeners to the buttons
+//introduce userChoice state variable: 1-ST button pushed, 0-MI button pushed
+var userChoice;
+
+//add EventListeners to the buttons
 startButton.addEventListener('click', function(){
 	clickSound.play();
 	bgSound.play();
-	//redirect to the game page
-	//window.location.href = 'game.html';
+	userChoice = 1;
 });
-
 moreInfoButton.addEventListener('click', function(){
 	clickSound.play();
-	//shows the author information
-	window.location.href = 'authorInfo.html';
+	userChoice = 0;
+});
+
+//add EventListener to the audio
+clickSound.addEventListener('ended', function(){
+	if(userChoice == 0){
+		//shows the author information
+		window.location.href = 'authorInfo.html';
+	}
+	else{
+		//redirect to the game page
+		//window.location.href = 'game.html';
+	}
 });
