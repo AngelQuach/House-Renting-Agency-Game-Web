@@ -5,6 +5,7 @@ var moreInfoButton = document.getElementById("MIButton");
 //introduce sound effects
 var clickSound = new Audio('clickSound.m4a');
 var bgSound = new Audio('bgMusic.mp3');
+bgSound.play();
 
 //add actionListeners to the buttons
 startButton.addEventListener('click', function(){
