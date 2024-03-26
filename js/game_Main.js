@@ -14,7 +14,7 @@ bgSound.preload = "auto";
 startButton.addEventListener('click', function(){
 	console.log("Start button clicked"); //log a message for checking purpose
 	clickSound.play();
-	bgSound.play();
+	//bgSound.play();
 });
 
 moreInfoButton.addEventListener('click', function(){
