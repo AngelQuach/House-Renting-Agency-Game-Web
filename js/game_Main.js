@@ -9,7 +9,7 @@ var bgSound = new Audio('bgMusic.m4a');
 //introduce userChoice state variable: 1-ST button pushed, 0-MI button pushed
 var userChoice;
 
-//add EventListeners to the buttons
+//add EventListener to the buttons
 startButton.addEventListener('click', function(){
 	clickSound.play();
 	bgSound.play();
@@ -20,14 +20,12 @@ moreInfoButton.addEventListener('click', function(){
 	userChoice = 0;
 });
 
-//add EventListener to the audio
+//add EventListeners to the audio
 clickSound.addEventListener('ended', function(){
 	if(userChoice == 0){
 		//shows the author information
 		window.location.href = 'authorInfo.html';
 	}
-	else{
-		//redirect to the game page
-		//window.location.href = 'game.html';
-	}
+	//redirect to the game page
+	//window.location.href = 'game.html';
 });
