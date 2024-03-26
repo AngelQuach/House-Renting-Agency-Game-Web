@@ -6,10 +6,6 @@ var moreInfoButton = document.getElementById("MIButton");
 var clickSound = new Audio('clickSound.m4a');
 var bgSound = new Audio('bgMusic.mp3');
 
-//preload the sounds
-//clickSound.preload = "auto";
-//bgSound.preload = "auto";
-
 //add actionListeners to the buttons
 startButton.addEventListener('click', function(){
 	console.log("Start button clicked"); //log a message for checking purpose
