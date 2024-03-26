@@ -3,8 +3,8 @@ var startButton = document.getElementById("StButton");
 var moreInfoButton = document.getElementById("MIButton");
 
 //preload the sounds
-clickSound.preload = 'auto';
-bgSound.preload = 'auto';
+clickSound.preload = "auto";
+bgSound.preload = "auto";
 bgSound.play();
 
 //add actionListeners to the buttons
