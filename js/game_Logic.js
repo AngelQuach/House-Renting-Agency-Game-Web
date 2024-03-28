@@ -1,7 +1,6 @@
 //set up the dialog format
 var gamedialog = {
-    drawBounds: function(x, y, width, height, radius){
-        var ctx = document.context;
+    drawBounds: function(ctx, x, y, width, height, radius){
         ctx.strokeStyle = "black";
         ctx.lineWidth = 4;
 
@@ -31,4 +30,3 @@ var gamedialog = {
         ctx.fill();
     }
 }
-gamedialog.drawBounds(100, 400, 350, 250, 10);
