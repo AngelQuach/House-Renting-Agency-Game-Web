@@ -1,5 +1,5 @@
 //set up the dialog format
-var gamedialog = {
+gamedialog = {
     drawBounds: function(ctx, x, y, width, height, radius){
         ctx.strokeStyle = "black";
         ctx.lineWidth = 4;
