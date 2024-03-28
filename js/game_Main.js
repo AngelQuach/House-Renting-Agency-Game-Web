@@ -12,7 +12,7 @@ var userChoice;
 //add EventListener to the buttons
 startButton.addEventListener('click', function(){
 	clickSound.play();
-	bgSound.play();
+	//bgSound.play();
 	userChoice = 1;
 });
 moreInfoButton.addEventListener('click', function(){
@@ -27,5 +27,7 @@ clickSound.addEventListener('ended', function(){
 		window.location.href = 'authorInfo.html';
 	}
 	//redirect to the game page
-	//window.location.href = 'game.html';
+	else{
+		window.location.href = 'game.html';
+	}
 });
