@@ -10,4 +10,4 @@ What is the program about?
 - At the end of each working day, players will be evaluated according to a predefined rubric (to be determined) and these evaluations will impact the final ending.
 
 Note:
-- All the images were created by Angel Quach and only belong to the author. @2023
+- All the images were created by Angel Quach and only belong to the author. @2024
